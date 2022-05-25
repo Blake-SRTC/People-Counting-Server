@@ -1,0 +1,20 @@
+<!DOCTYPE HTML><html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos.css">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h2>UCB People Counter</h2>
+  <p>
+    <i class="fa fa-user" style="color:#00add6;"></i> 
+    <span class="dht-labels">Total dentro UCB: </span> 
+    <span id="total">%TOTAL_PEOPLE%</span>
+  </p>
+  <p id="grafico">
+    <iframe style="background: #F1F5F4;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" height="800" width="80%" src="https://charts.mongodb.com/charts-project-0-hlpxg/embed/dashboards?id=5dd591a7-1ac8-421d-a9bf-8ed0c6b826a0&theme=light&autoRefresh=true&maxDataAge=10&showTitleAndDesc=false&scalingWidth=scale&scalingHeight=scale"></iframe>
+  </p>
+</body>
+<script src="./scripts.js"></script>
+</html>
